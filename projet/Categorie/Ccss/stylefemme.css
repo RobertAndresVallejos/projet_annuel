@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  /* Cache les débordements horizontaux */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Organise le contenu en colonne */
+    background-color: hwb(246 7% 19%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    padding: 0;  /* Aucun padding pour le contenu principal */
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Assurez-vous que la navbar utilise toute la largeur */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Permet à la barre de recherche de prendre l'espace nécessaire */
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+}
+
+.main-content h1 {
+    text-align: center;
+    margin: 20px 0;
+    width: 100%; /* S'assure que le contenu principal utilise toute la largeur disponible */
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.categorie {
+    background-color: #ffffe0; /* Jaune clair */
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;  /* Aucune marge pour l'image */
+}

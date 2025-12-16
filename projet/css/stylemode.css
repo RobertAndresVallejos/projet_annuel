@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: hsl(36, 100%, 90%);
+}
+
+
+main{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 85%;  /* Ensure full width to cover the area beside the filter */
+    margin-left: 10%;  /* Assuming filter width is 10%, adjust if filter width changes */
+}
+
+.produit {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante */
+    justify-content: space-between; /* Alignement des éléments pour un espacement uniforme */
+    background-color: #FFEBCD;
+    width: 100%; /* Assure que cela prend l'espace restant */
+}
+
+.product-link {
+    flex: 1 0 21%; /* Grandit pour remplir l'espace, base à 21% pour adapter presque 4 éléments par ligne */
+    margin: 1%; /* Fournit un espace entre les éléments */
+    text-decoration: none; /* Supprime la décoration de lien standard */
+    color: inherit; /* Hérite de la couleur de texte du parent ou peut être définie explicitement */
+}
+
+.product {
+    background-color: #fff; /* Couleur de fond pour les éléments du produit */
+    padding: 10px; /* Marge intérieure de chaque élément du produit */
+    box-sizing: border-box; /* Inclut la marge et la bordure dans la largeur et la hauteur totale de l'élément */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments à l'intérieur de chaque produit */
+}
+
+.product-image {
+    width: 100%; /* Pleine largeur du conteneur */
+    height: 150px; /* Hauteur fixe pour les images */
+    background-color: #ccc; /* Couleur de remplissage */
+    margin-bottom: 10px; /* Espace sous l'image */
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.image-text {
+    position: relative;
+    width: 800px; /* Adjust width to control spacing */
+    height: 600px; /* New height for the images */
+    cursor: pointer; /* Indicates an interactive item */
+    overflow: hidden; /* Ensures no overflow of content */
+}
+
+.image-text img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+
+.image-text:hover .overlay {
+    opacity: 1; /* Shows the overlay on hover */
+}
+
+.image-text:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+
+@media (max-width: 600px) {
+    .overlay {
+        font-size: 18px; /* Smaller font size for smaller screens */
+    }
+}

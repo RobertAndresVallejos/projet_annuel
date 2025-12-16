@@ -1,0 +1,102 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #7272d2;
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    min-height: 100vh; /* S'assure que le body prend au moins la hauteur de l'écran */
+}
+
+main {
+    flex: 1 0 auto; /* This will allow the main content to expand and fill the space available */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-content {
+    flex : 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.image-text {
+    position: relative;
+    width: 800px; /* Adjust width to control spacing */
+    height: 600px; /* New height for the images */
+    cursor: pointer; /* Indicates an interactive item */
+    overflow: hidden; /* Ensures no overflow of content */
+}
+
+.image-text img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark background on hover */
+    color: white;
+    width: 100%;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.5s ease;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px; /* Increased font size */
+}
+
+.image-text:hover .overlay {
+    opacity: 1; /* Shows the overlay on hover */
+}
+
+.image-text:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.promo-container {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between each box */
+    padding: 20px; /* Add padding around the containers */
+    margin: 20px 0; /* Space above and below the promo section */
+}
+
+.promo-box {
+    flex: 1; /* Each box will take equal space */
+    margin: 0 10px; /* Space between the boxes */
+    color: #000000; /* Black text color */
+    padding: 20px; /* Padding inside each box */
+    text-align: center; /* Center-align the text */
+    border-radius: 8px; /* Optional: rounded corners */
+    font-size: 26px; /* Increased font size */
+
+}
+
+
+
+
+@media (max-width: 600px) {
+    .overlay {
+        font-size: 18px; /* Smaller font size for smaller screens */
+    }
+    .promo-container {
+        flex-direction: column;
+    }
+    .promo-box {
+        margin: 10px 0; /* Stack with space between on small screens */
+        font-size: 14px; /* Increased font size */
+    }
+}

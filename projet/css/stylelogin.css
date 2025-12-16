@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: black; /* Ajout de la couleur du texte pour tout le body */
+}
+
+.login-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: black; /* Assurez-vous que le texte à l'intérieur du conteneur de login soit noir */
+}
+
+.tabs button {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black; /* Couleur du texte des boutons */
+}
+
+.tabs button:focus {
+    border-bottom: 2px solid orange;
+    color: black; /* Maintient la couleur du texte en noir lors du focus */
+}
+
+.form-container {
+    padding: 20px;
+    width: 80%; /* Définir une largeur fixe ou en pourcentage selon le design souhaité */
+    max-width: 500px; /* Ou toute autre valeur qui convient à votre design */
+    margin: auto; /* Centre les formulaires */
+}
+
+
+input[type="email"], input[type="password"], input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: black; /* Couleur du texte pour les champs de saisie */
+    box-sizing: border-box; /* Inclut padding et border dans la largeur */
+
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    border-radius: 4px;
+    color: white; /* Couleur du texte du bouton (restera blanc pour la visibilité) */
+    cursor: pointer;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black; /* Assurez-vous que cela correspond à votre palette de couleurs */
+}
+
+.tab:not(:last-child) {
+    border-right: 1px solid #ccc; /* Ajoute une barre verticale entre les onglets */
+}
+
+.tab:focus, .tab.active { /* Style pour l'onglet actif ou au focus */
+    border-bottom: 2px solid orange;
+    color: black;
+}

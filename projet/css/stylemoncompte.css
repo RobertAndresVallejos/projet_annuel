@@ -1,0 +1,167 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    width: 100%; /* Assurez-vous que le corps prend toute la largeur */
+}
+
+header {
+    background-color: #FFBD59; /* Orange color */
+    color: white;
+    padding: 10px;
+    width: 100%; /* Makes the header full width */
+    text-align: center; /* Center the text inside the header */
+}
+
+
+.header-links {
+    display: flex; /* Changez inline-block à flex pour aligner horizontalement */
+    align-items: center; /* Centre les liens verticalement avec les autres éléments de la navbar */
+    margin-left: auto; /* Pousse les liens vers la droite */
+    padding-right: 20px; /* Ajoute un peu d'espace à droite */
+}
+
+.header-links a {
+    text-decoration: none;
+    color: #000; /* Assurez-vous que la couleur est appropriée pour la visibilité */
+    margin-left: 20px; /* Espacement entre les liens */
+    font-size: 16px; /* Taille de la police pour les liens */
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Assurez-vous que la navbar utilise toute la largeur */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Permet à la barre de recherche de prendre l'espace nécessaire */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+.nav-list li {
+    display: inline;
+    margin-right: 20px;
+}
+.search-container input[type="text"] {
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    flex: 1; /* Prend l'espace restant après le header et le footer */
+    overflow: hidden; /* Empêche le débordement du contenu */
+}
+
+.sidebar {
+    background-color: #FFEBCD;
+    width: 250px;
+    padding: 20px;
+    overflow-y: auto; /* Permet la défilement si nécessaire */
+    /*height: calc(100vh - 40px); /* Hauteur ajustée pour tenir compte du footer et du header */
+}
+
+.sidebar h3 {
+    color: rgb(0, 0, 0);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #f7bd4a;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #D9D9D9;
+    overflow-y: auto; /* Permet la défilement du contenu principal si nécessaire */
+}
+
+footer {
+    background-color: #FFBD59;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative; /* Position relative pour s'assurer qu'il reste en bas */
+}
+
+
+
+/* Vous pouvez ajuster le style ci-dessous selon vos préférences */
+.form-container p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #FFBD59;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.tabs button {
+    padding: 10px;
+    border: none;
+    background-color: inherit;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tabs button.active {
+    background-color: #ddd;
+}

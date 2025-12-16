@@ -1,0 +1,40 @@
+body, html {
+    height: 100%; /* Permet d'utiliser toute la hauteur de la fenêtre du navigateur */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Organise le contenu en colonne */
+    background-color: hwb(246 7% 19%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    flex : 1;
+    padding: 0;  /* Aucun padding pour le contenu principal */
+    width: 100%;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.categorie {
+    background-color: #ffffe0; /* Jaune clair */
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;  /* Aucune marge pour l'image */
+}

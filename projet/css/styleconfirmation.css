@@ -1,0 +1,58 @@
+header {
+    background-color: #FFBD59; /* Couleur orange foncé */
+    color: white;
+    padding: 10px 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFEBCD ; /* Couleur de fond */
+    color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmation-page {
+    width: 80%; /* Ajustez selon la largeur souhaitée */
+}
+
+.logo {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement, utile si le conteneur a une hauteur spécifique */
+    width: 100%; /* Prend toute la largeur du conteneur parent */
+}
+
+.logo img {
+    width: 100px; /* Taille du logo */
+    margin-bottom: 20px; /* Espacement après le logo */
+}
+
+
+.confirmation-content {
+    max-width: 500px; /* Ajustez la largeur maximale du contenu */
+    margin: auto;
+    padding: 20px; /* Espacement interne pour le contenu */
+}
+
+.confirmation-content h1 {
+    text-align: left;
+    font-size: 22px; /* Taille de la police pour le titre */
+    margin-bottom: 15px; /* Espacement après le titre */
+}
+
+.confirmation-content p {
+    text-align: left;
+    font-size: 16px; /* Taille de la police pour le texte */
+    margin-bottom: 10px; /* Espacement entre les paragraphes */
+    line-height: 1.2; /* Hauteur de ligne pour le texte */
+}
+
+
+
+

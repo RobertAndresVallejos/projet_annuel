@@ -1,0 +1,52 @@
+/**/
+/* Applicaation de flexbox pour aligner header,main et footer*/
+body {
+    display: flex;
+    flex-direction: column;/*Alignement en colonne*/
+    margin: 0; /*Supprime les marges par défaut */
+    min-height: 100%; /* Assure que la hauteur prend tout l'écran */
+}
+
+main {
+    flex: 1; /* Permet au main de prendre tout l'espace disponible */
+    padding: 20px; /* Optionnel, ajoute un espace autour du contenu */
+    background-color: #f9f9f9;
+}
+
+/*TABLEAU (DEBUT)*/
+table {
+    border-collapse: collapse;/* Supprime les espaces entre les bordures */
+    border: 2px solid rgb(140 140 140);/*bordure cellule*/
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;/*espacement entres chaque lettres*/
+}
+
+/*style légende du tableau*/
+caption {
+    caption-side: top;
+    padding: 10px;/*espacement autour de l'élement*/
+    font-weight: bold;/*texte en gras*/
+}
+
+/*style des sections thead et tfoot*/
+thead, tfoot {
+    background-color: rgb(228 240 245);/*couleur imposé*/
+}
+  
+th, td {
+    border: 1px solid rgb(160 160 160);/*bordure cellule*/
+    padding: 8px 10px;/*espacement autour de l'élement*/
+}
+  
+/* Alignement spécifique pour la dernière cellule */
+td:last-of-type {
+    text-align: center;/* Centre le texte de la dernière cellule */
+}
+  
+/* Alterne les couleurs des lignes pour le corps du tableau */
+/*avec even ont cible les lignes paires*/
+tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+}
+/*TABLEAU (FIN)*/

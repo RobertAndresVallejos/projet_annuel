@@ -1,0 +1,44 @@
+
+
+/* Style CSS pour les filtres */
+.filters-panel {
+    display: flex;
+    align-items: start;
+    position: absolute; /* Changez `absolute` à `fixed` si nécessaire */
+    width: 10%; /* ou toute autre largeur appropriée */
+    height: 90%; /* Ajustez la hauteur pour éviter de chevaucher le footer */
+    background-color: hsl(36, 100%, 90%);
+}
+
+
+
+.filter {
+    margin-bottom: 15px; /* Espace entre les filtres */
+    top: 80px; /* Ajustez selon la hauteur de votre header */
+}
+
+.filter label {
+    font-weight: bold;
+    display: block; /* Assure que le label est au-dessus de la sélection */
+}
+
+.filter select {
+    width: 100%; /* Utilise toute la largeur disponible */
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.filter-button {
+    width: 100%;
+    padding: 10px 0; /* Augmente le padding pour un meilleur clic */
+    background-color: #FFBD59;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #ffa500;
+}

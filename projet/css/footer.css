@@ -1,0 +1,8 @@
+footer {
+    flex-shrink: 0; /* Prevents the footer from shrinking */
+    width: 100%;
+    background-color: #FFBD59;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
